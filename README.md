@@ -2,12 +2,13 @@
 
 <div align="center">Solução para otimizar a comunicação entre clientes e o Carrefour.</div>
 
-<div>Integração da API do Telegram, DialogFlow e dotenv.</div>
+<div>Integração da API do Telegram, DialogFlow, MongoDB (mongoose) e dotenv.</div>
 
 ### Dependências
 - API do Telegram = npm i node-telegram-bot-api
 - API do DialogFlow = npm install dialogflow
 - API do dotenv = npm install dotenv
+- API do Mongoose = npm install mongoose
 
 ### Utilização
 Para o código funcionar será necessário fornecer o token de acesso a API do Telegram e DialogFlow.
