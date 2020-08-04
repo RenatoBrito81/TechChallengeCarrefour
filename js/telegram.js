@@ -50,7 +50,6 @@ function chatBotTelegram(){
         else{
             if(msg.text !== "Mostrar opções..."){
                 const dialogFlowResponse = dialogFlow.sendMessage(msg.chat.id.toString(), msg.text).then((resposta) => {
-                    console.log('resposta = ' + resposta.text);
                     switch(resposta.text){
                         case "indicarProduto": {
                             //Chama função para consultar o produto
