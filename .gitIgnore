@@ -1,0 +1,3 @@
+### Node ###
+# dotenv environment variables file
+.env
