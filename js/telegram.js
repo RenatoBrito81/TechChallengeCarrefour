@@ -52,38 +52,104 @@ function chatBotTelegram(){
                 const dialogFlowResponse = dialogFlow.sendMessage(msg.chat.id.toString(), msg.text).then((resposta) => {
                     switch(resposta.text){
                         case "indicarProduto": {
-                            //Chama função para consultar o produto
-                            //Não funcionou corretamente
+                            //Cria botão para consultar o produto
+                            bot.sendMessage(msg.chat.id, "Clique no botão abaixo para executar a opção desejada.\nCaso não for a opção desejada, digite novamente sua necessidade.", {
+                                "reply_markup": {
+                                    "inline_keyboard": [
+                                        [
+                                            {
+                                                text: "Indicação de produto",
+                                                callback_data: "indicarProduto"
+                                            }
+                                        ]
+                                    ]
+                                }
+                            });
 
                             break;
                         }
                         case "falarAtendente": {
-                            //Chama função para chamar o atendente
-                            //Não funcionou corretamente
+                            //Cria botão para chamar o atendente
+                            bot.sendMessage(msg.chat.id, "Clique no botão abaixo para executar a opção desejada.\nCaso não for a opção desejada, digite novamente sua necessidade.", {
+                                "reply_markup": {
+                                    "inline_keyboard": [
+                                        [
+                                            {
+                                                text: "Falar com Atendente",
+                                                callback_data: "falarAtendente"
+                                            }
+                                        ]
+                                    ]
+                                }
+                            });
 
                             break;s
                         }
                         case "statusPedido": {
-                            //Chama função para consultar o status do pedido
-                            //Não funcionou corretamente
+                            //Cria botão para consultar o status do pedido
+                            bot.sendMessage(msg.chat.id, "Clique no botão abaixo para executar a opção desejada.\nCaso não for a opção desejada, digite novamente sua necessidade.", {
+                                "reply_markup": {
+                                    "inline_keyboard": [
+                                        [
+                                            {
+                                                text: "Consultar Status de Pedido",
+                                                callback_data: "statusPedido"
+                                            }
+                                        ]
+                                    ]
+                                }
+                            });
 
                             break;
                         }
                         case "rastrearPedido": {
-                            //Chama função para consultar o rastreio do pedido
-                            //Não funcionou corretamente
+                            //Cria botão para consultar o rastreio do pedido
+                            bot.sendMessage(msg.chat.id, "Clique no botão abaixo para executar a opção desejada.\nCaso não for a opção desejada, digite novamente sua necessidade.", {
+                                "reply_markup": {
+                                    "inline_keyboard": [
+                                        [
+                                            {
+                                                text: "Rastrear Pedido",
+                                                callback_data: "rastrearPedido"
+                                            }
+                                        ]
+                                    ]
+                                }
+                            });
 
                             break;
                         }
                         case "avaliarAtendimento": {
-                            //Chama função para avaliar o atendimento
-                            //Não funcionou corretamente
+                            //Cria botão para avaliar o atendimento
+                            bot.sendMessage(msg.chat.id, "Clique no botão abaixo para executar a opção desejada.\nCaso não for a opção desejada, digite novamente sua necessidade.", {
+                                "reply_markup": {
+                                    "inline_keyboard": [
+                                        [
+                                            {
+                                                text: "Avaliar Atendimento",
+                                                callback_data: "avaliarAtendimento"
+                                            }
+                                        ]
+                                    ]
+                                }
+                            });
 
                             break;
                         }
                         case "avaliarCanal": {
-                            //Chama função para sugestão do cliente
-                            //Não funcionou corretamente
+                            //Cria botão para sugestão do cliente
+                            bot.sendMessage(msg.chat.id, "Clique no botão abaixo para executar a opção desejada.\nCaso não for a opção desejada, digite novamente sua necessidade.", {
+                                "reply_markup": {
+                                    "inline_keyboard": [
+                                        [
+                                            {
+                                                text: "Dê sua sugestão",
+                                                callback_data: "avaliarCanal"
+                                            }
+                                        ]
+                                    ]
+                                }
+                            });
 
                             break;
                         }

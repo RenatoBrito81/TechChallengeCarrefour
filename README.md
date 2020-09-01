@@ -23,3 +23,7 @@ Para isso será necessário fazer efetuar as configurações em cada API.
    - No código está incluso a tag TODO indicando o local onde deve-se inserir as informações de tokes e credenciais das API's utilizadas.
    - O arquivo mongoose.js possuí uma função para iniciar os dados dos pedidos para utilização da consulta de status e rastreio do pedido.
    - Os pedidos para testar estão cadastrados com os números: 111, 222, 333, 444, 555, 666 e 777.
+
+
+### Autor
+Renato Brito
